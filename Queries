@@ -1,25 +1,26 @@
 -- Siguiendo la estructura existente de la tabla de viajes 2023 proveniente de BA Data, la replico en SQL para trabajarla posteriormente: 
-
+´´´sql
 CREATE TABLE viajes_2023 (
-    column1 INT,  -- Tipo de dato para column1 (asume INT, puede cambiar según necesidad)
-    Id_recorrido INT,  -- Tipo de dato para Id_recorrido (asume INT, puede cambiar según necesidad)
-    duracion_recorrido INT,  -- Tipo de dato para duracion_recorrido (asume INT, puede cambiar según necesidad)
-    fecha_origen_recorrido DATE,  -- Tipo de dato para fecha_origen_recorrido (asume DATE, puede cambiar según necesidad)
-    id_estacion_origen INT,  -- Tipo de dato para id_estacion_origen (asume INT, puede cambiar según necesidad)
-    nombre_estacion_origen VARCHAR(255),  -- Tipo de dato para nombre_estacion_origen (asume VARCHAR con longitud suficiente)
-    direccion_estacion_origen VARCHAR(255),  -- Tipo de dato para direccion_estacion_origen (asume VARCHAR con longitud suficiente)
-    long_estacion_origen DECIMAL(10, 6),  -- Tipo de dato para long_estacion_origen (asume DECIMAL)
-    lat_estacion_origen DECIMAL(10, 6),  -- Tipo de dato para lat_estacion_origen (asume DECIMAL)
-    fecha_destino_recorrido DATE,  -- Tipo de dato para fecha_destino_recorrido (asume DATE, puede cambiar según necesidad)
-    id_estacion_destino INT,  -- Tipo de dato para id_estacion_destino (asume INT, puede cambiar según necesidad)
-    nombre_estacion_destino VARCHAR(255),  -- Tipo de dato para nombre_estacion_destino (asume VARCHAR con longitud suficiente)
-    direccion_estacion_destino VARCHAR(255),  -- Tipo de dato para direccion_estacion_destino (asume VARCHAR con longitud suficiente)
-    long_estacion_destino DECIMAL(10, 6),  -- Tipo de dato para long_estacion_destino (asume DECIMAL)
-    lat_estacion_destino DECIMAL(10, 6),  -- Tipo de dato para lat_estacion_destino (asume DECIMAL)
-    id_usuario INT,  -- Tipo de dato para id_usuario (asume INT, puede cambiar según necesidad)
-    modelo_bici VARCHAR(50),  -- Tipo de dato para modelo_bici (asume VARCHAR con longitud suficiente)
-    genero VARCHAR(10)  -- Tipo de dato para género (asume VARCHAR con longitud suficiente)
+    column1 INT,
+    Id_recorrido INT,
+    duracion_recorrido INT,
+    fecha_origen_recorrido DATE,
+    id_estacion_origen INT,
+    nombre_estacion_origen VARCHAR(255),
+    direccion_estacion_origen VARCHAR(255),
+    long_estacion_origen DECIMAL(10, 6),
+    lat_estacion_origen DECIMAL(10, 6),
+    fecha_destino_recorrido DATE,
+    id_estacion_destino INT,
+    nombre_estacion_destino VARCHAR(255),
+    direccion_estacion_destino VARCHAR(255),
+    long_estacion_destino DECIMAL(10, 6),
+    lat_estacion_destino DECIMAL(10, 6),
+    id_usuario INT,
+    modelo_bici VARCHAR(50),
+    genero VARCHAR(10)
 );
+
 
 -- Analisis de las combinaciones entre estaciones de origen y destino (en %)
 
